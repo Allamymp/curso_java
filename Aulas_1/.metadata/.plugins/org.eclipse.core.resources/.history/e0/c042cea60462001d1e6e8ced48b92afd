@@ -1,0 +1,19 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class exercicio_18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Por favor, insira um numero inteiro");
+		int x = sc.nextInt();
+		int i = 0;
+		
+		
+	}
+
+}

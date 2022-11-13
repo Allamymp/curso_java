@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int y = 32;
+		int x = 8; 
+		
+		System.out.println("Teste " + (y+x));
+	}
+
+}

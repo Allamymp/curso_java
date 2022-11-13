@@ -1,0 +1,16 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		float x,y,z = 0;
+		x = 1;
+		y = 2;
+		z = 3;
+		
+		System.out.printf(" os números são: %.1f e %.1f e %.1f", x,y,z);
+	}
+
+}

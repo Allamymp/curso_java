@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		double y = 0.123456789;
+		 
+		
+		System.out.print("Teste %.2f% ", y);
+	}
+
+}

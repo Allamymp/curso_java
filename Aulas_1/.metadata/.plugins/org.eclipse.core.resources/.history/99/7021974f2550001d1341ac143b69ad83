@@ -1,0 +1,19 @@
+package estrutura_sequencial;
+
+public class aula3 {
+
+	public static void main(String[] args) {
+		
+		int x = 36;
+		int y = 6;
+		int z = 2;
+		int delta =  (y^2) - 4*x*z;
+		
+		System.out.printf("A raiz quadrada do número %d e: %.2f\n",x, + Math.sqrt(x));
+		System.out.printf("O número %d elevado a %d é : %.0f\n", y, z, Math.pow(y,z));
+		System.out.printf("O valor absoluto de X é: %f\n", Math.abs(x));
+		System.out.printf("Delta  de %d, %d, %d  é %d",x,y,z,delta);
+		System.out.println();
+		
+	}
+}

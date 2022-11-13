@@ -1,0 +1,22 @@
+package estrutura_sequencial;
+
+import java.util.Scanner;
+
+public class aula2 {
+
+	public static void main(String[] args) {
+			// TODO Auto-generated method stub
+
+			Scanner sc = new Scanner(System.in);
+			
+			int x;
+			
+			System.out.println("Por favor, digite algo e pressione ENTER:\n");
+			x = sc.nextInt();
+			System.out.println("\nVoce digitou: " + x);
+			
+			
+			sc.close();
+		}
+	}
+

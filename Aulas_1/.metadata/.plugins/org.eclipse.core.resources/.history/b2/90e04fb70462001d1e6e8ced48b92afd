@@ -1,0 +1,31 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class exercicio_18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Por favor, insira um numero inteiro");
+		int x = sc.nextInt();
+	 
+		
+		if(x>=1 && x<=1000) {
+			for(int i=1; i<=x; i++) {
+				if(i%2==0) {
+					System.out.printf("%d é par",i) ;
+				}
+				else {
+					break;
+				}
+			}
+		}
+		else {
+		System.out.println("Numero invalido");
+		}
+	}
+
+}

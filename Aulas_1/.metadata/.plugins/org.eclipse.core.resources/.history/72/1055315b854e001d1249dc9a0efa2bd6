@@ -1,0 +1,11 @@
+package estrutura_sequencial;
+
+public class aula3 {
+
+	public static void main(String[] args) {
+		
+		int x = 36;
+		
+		System.out.printf("A raiz quadrada do número %d é: %f",x, + Math.sqrt(x));
+	}
+}

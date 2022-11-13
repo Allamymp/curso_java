@@ -1,0 +1,46 @@
+package exercicios;
+
+import java.util.Scanner;
+
+/*Escreva um programa para ler as coordenadas (X,Y) de uma quantidade indeterminada de pontos no sistema
+cartesiano. Para cada ponto escrever o quadrante a que ele pertence. O algoritmo será encerrado quando 
+pelo menos uma de duas coordenadas for NULA (nesta situação sem escrever mensagem alguma).
+ */
+
+public class exercicio_16 {
+	public static void main(String[] args) {
+
+		Scanner obj_scanner = new Scanner(System.in);
+
+		float x = 1;
+		float y = 1;
+
+		while (x != 0 && y != 0) {
+			System.out.println("Por favor, insira o valor de X.\n");
+			x = obj_scanner.nextFloat();
+
+			System.out.println("Por favor, insira o valor de Y. \n");
+			y = obj_scanner.nextFloat();
+
+			if (x != 0 && y != 0) {
+
+				if (x >= 1 && y >= 1) {
+					System.out.println("\n Primeiro");
+				} else if (x < 1 && y >= 1) {
+					System.out.println("\n Segundo");
+				} else if (x < 1 && y < 1) {
+
+					System.out.println("\n Terceiro");
+				}
+
+				else {
+					System.out.println("\n Quarto");
+				}
+			} else {
+				break;
+			}
+		}
+
+		obj_scanner.close();
+	}
+}

@@ -1,0 +1,46 @@
+package exercicios;
+
+import java.util.Scanner;
+
+/*  Leia 1 valor inteiro N, que representa o número de casos de teste que vem a seguir.
+ *  Cada caso de teste consiste de 3 valores reais, cada um deles com uma casa decimal. 
+ *  Apresente a média ponderada para cada um destes conjuntos de 3 valores, sendo que o 
+ *  primeiro valor tem peso 2, o segundo valor tem peso 3 e o terceiro valor tem peso 5.
+ */
+
+public class exercicio_20 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Por favor, insira o numero de casos de teste. \n");
+		int n = sc.nextInt();
+		
+
+		for (int z = 1; z <= 3; z++) {
+			float media = 0;
+			for (int i = 1; i <= 3; i++) {
+				System.out.println("Por favor, insira o valor de teste:\n");
+				float valor_teste = sc.nextFloat();
+
+				switch (i) {
+				case 1:
+					media += valor_teste * 2;
+					break;
+				case 2:
+					media += valor_teste * 3;
+					break;
+				case 3:
+					media += valor_teste * 5;
+					break;
+
+				}
+			}
+			System.out.printf("\nMedia:%.1f\n", media / 10);
+		}
+		
+		sc.close();
+	}
+
+}

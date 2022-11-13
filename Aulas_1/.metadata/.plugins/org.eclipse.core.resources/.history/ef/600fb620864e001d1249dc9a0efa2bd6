@@ -1,0 +1,15 @@
+package estrutura_sequencial;
+
+public class aula3 {
+
+	public static void main(String[] args) {
+		
+		int x = 36;
+		int y = 6;
+		int z = 2;
+		
+		System.out.printf("A raiz quadrada do número %d e: %.2f\n",x, + Math.sqrt(x));
+		System.out.printf("O número %d elevado a %d é : %d", y, z, Math.pow(y,z));
+		
+	}
+}
