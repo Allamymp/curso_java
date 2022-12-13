@@ -23,7 +23,7 @@ public class Pokedex {
 
 		System.out.println("___________________________________________________");
 		System.out.println("Pokemon adicionado!");
-
+		sc.close();
 	}
 
 	public void show_pokemon() {
@@ -44,6 +44,8 @@ public class Pokedex {
 		poke_name.remove(codigo);
 		poke_type.remove(codigo);
 		poke_lvl.remove(codigo);
+		
+		sc.close();
 
 	}
 
