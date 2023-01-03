@@ -14,39 +14,39 @@ public class Exercicio_19 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner (System.in);
-		
+		Scanner sc = new Scanner(System.in);
+
 		System.out.println("Quantos alunos serao inseridos?");
 		int n = sc.nextInt();
-		
-		String[] vetor_nome  = new String[n];
+
+		String[] vetor_nome = new String[n];
 		double[] vetor_nota1 = new double[n];
 		double[] vetor_nota2 = new double[n];
-		
-		for(int i = 0; i< vetor_nome.length; i++) {
-			
-			System.out.println("Digite o nome do "+(i+1)+"a aluno: ");
+
+		for (int i = 0; i < vetor_nome.length; i++) {
+
+			System.out.println("Digite o nome do " + (i + 1) + "a aluno: ");
 			sc.nextLine();
 			vetor_nome[i] = sc.nextLine();
-			
+
 			System.out.println("Digite a nota do primeiro semestre: ");
 			vetor_nota1[i] = sc.nextDouble();
-			
+
 			System.out.println("Digite a nota do segundo semestre: ");
 			vetor_nota2[i] = sc.nextDouble();
 		}
-		
+
 		System.out.println("Alunos aprovados:");
-		for(int i=0; i<vetor_nome.length; i++) {
-			
-			double media = (vetor_nota1[i]+vetor_nota2[i])/2;
-			if(media>=6) {
+		for (int i = 0; i < vetor_nome.length; i++) {
+
+			double media = (vetor_nota1[i] + vetor_nota2[i]) / 2;
+			if (media >= 6) {
 				System.out.println(vetor_nome[i]);
 			}
 		}
-		
+
 		sc.close();
 
 	}
